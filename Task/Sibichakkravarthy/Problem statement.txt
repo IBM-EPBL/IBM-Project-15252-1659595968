@@ -1,0 +1,11 @@
+Problem statement:
+Signs With Smart Connectivity For Better Road Safety
+•	Man behind the wheel plays an important role in most of the crashes.In most of the cases crashes 
+occurs either due to carelessness.
+•	In this project  reduce the human error and provide the safety roads.
+•	In this project we have to improve the road safety.
+•	Road safety refers to the methods and measures taken to prevent a person using the road 
+From being killed or seriously injured.
+•	It Focuses on preventing accidents that result in serious injury and death, keeping in mind that 
+human error can occur.
+•	 The  system is monitoring for  road so the drivers can not break the rules.
