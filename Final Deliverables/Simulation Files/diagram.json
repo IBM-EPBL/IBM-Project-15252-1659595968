@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "author": "Mohamed Abdullah",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -4.95, "left": -39.33, "attrs": {} },
+    {
+      "type": "wokwi-ili9341",
+      "id": "lcd1",
+      "top": -65.91,
+      "left": 214.72,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "sw1",
+      "top": 108.52,
+      "left": -129.35,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "sw2",
+      "top": 32.54,
+      "left": -127.36,
+      "rotate": 270,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "sw2:3", "esp:D32", "green", [ "h18.07", "v27.04" ] ],
+    [ "sw1:3", "esp:D26", "green", [ "h18.63", "v-20.06" ] ],
+    [ "sw2:2", "esp:3V3", "white", [ "h7.96", "v196.62", "h160.9", "v-94.83" ] ],
+    [ "sw1:2", "esp:3V3", "white", [ "h17.9", "v104.03", "h146.45", "v-78.22" ] ],
+    [ "lcd1:GND", "esp:GND.1", "black", [ "h-20.15", "v81.46" ] ],
+    [ "lcd1:CS", "esp:D15", "violet", [ "h-47.36", "v71.85", "h-61.37" ] ],
+    [ "lcd1:RST", "esp:D4", "magenta", [ "h-71.41", "v45.18" ] ],
+    [ "lcd1:D/C", "esp:D2", "#8f4814", [ "h-34.23", "v43.98", "h-74.5" ] ],
+    [ "lcd1:MOSI", "esp:D23", "green", [ "h-62.03", "v-70.03" ] ],
+    [ "lcd1:SCK", "esp:D18", "gray", [ "h-86.57", "v-21.93" ] ],
+    [
+      "lcd1:VCC",
+      "esp:VIN",
+      "red",
+      [ "h-19.42", "v-90.92", "h-206.34", "v201.11", "h9.27", "v-0.03" ]
+    ],
+    [ "lcd1:MISO", "esp:D19", "gold", [ "h-26.5", "v-73.21", "h-60.8", "v21.04" ] ]
+  ]
+}
